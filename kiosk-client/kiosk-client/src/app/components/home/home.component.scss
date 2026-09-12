@@ -1,0 +1,52 @@
+.health-status {
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+
+  &.ok {
+    background: #2ecc71;
+  }
+
+  &.fail {
+    background: #e74c3c;
+  }
+}
+
+.kiosk-shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 2rem;
+  background: #111;
+  color: #fff;
+}
+
+.mic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mic-button {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: none;
+  font-size: 48px;
+  background: #ff6a00;
+  color: #fff;
+  cursor: pointer;
+}
+
+.transcript-container {
+  width: 80%;
+}
+
+.transcript-box {
+  width: 100%;
+  font-size: 16px;
+}
+

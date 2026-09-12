@@ -1,0 +1,35 @@
+
+
+<div class="kiosk-shell">
+  <div class="mic-container">
+    <button
+      class="mic-button"
+      *ngIf="!isListening"
+      (click)="onMicTap()"
+    >
+      🎤
+    </button>
+
+    <button
+      class="mic-button stop"
+      *ngIf="isListening"
+      (click)="onMicStop()"
+    >
+      ⏹ Stop
+    </button>
+
+    <div class="mic-label">
+      {{ isListening ? 'Listening...' : 'Tap to speak' }}
+    </div>
+  </div>
+
+  <div class="transcript-container">
+    <label>Transcript</label>
+    <textarea
+      [value]="transcript"
+      readonly
+      rows="6"
+      class="transcript-box"
+    ></textarea>
+  </div>
+</div>
